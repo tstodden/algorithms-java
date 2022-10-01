@@ -1,0 +1,9 @@
+"""
+This module contains algorithm implementations for Algorithms 4th Edition.
+"""
+module(
+    name = "algorithms",
+    version = "0.0.1",
+)
+
+bazel_dep(name = "rules_java", version = "5.1.0")

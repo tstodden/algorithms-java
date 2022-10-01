@@ -1,7 +1,3 @@
-.vscode
-
-lib
-
 bazel-algorithms
 bazel-bin
 bazel-out

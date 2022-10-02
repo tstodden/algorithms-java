@@ -1,4 +1,4 @@
-package sort;
+package io.tstodden.algorithms.sort;
 
 import edu.princeton.cs.algs4.StdIn;
 

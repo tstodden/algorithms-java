@@ -3,6 +3,8 @@ package io.tstodden.algorithms.sort;
 import edu.princeton.cs.algs4.StdIn;
 
 public class Merge extends Sorter {
+
+  @SuppressWarnings("unchecked")
   public static <T extends Comparable<T>> void sort(T[] a) {
     T[] aux = (T[]) new Comparable[a.length];
     sort(a, aux, 0, a.length - 1);

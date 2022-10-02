@@ -3,6 +3,7 @@ package io.tstodden.algorithms.sort;
 import edu.princeton.cs.algs4.StdIn;
 
 public class Selection extends Sorter {
+
   public static <T extends Comparable<T>> void sort(T[] a) {
     for (int i = 0; i < a.length; i++) {
       int smallest = i;

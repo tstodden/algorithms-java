@@ -3,6 +3,7 @@ package io.tstodden.algorithms.sort;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Sorter {
+
   protected static <T extends Comparable<T>> boolean less(T v, T w) {
     return v.compareTo(w) < 0;
   }

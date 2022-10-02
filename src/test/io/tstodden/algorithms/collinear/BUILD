@@ -5,7 +5,20 @@ package(default_visibility = ["//visibility:public"])
 
 test_suite(
     name = "collinear",
-    tests = [":point_test"],
+    tests = [
+        ":brute_collinear_points_test",
+        ":point_test",
+    ],
+)
+
+java_test(
+    name = "brute_collinear_points_test",
+    srcs = ["TestBruteCollinearPoints.java"],
+    test_class = "io.tstodden.algorithms.collinear.TestBruteCollinearPoints",
+    deps = [
+        "//src/main/io/tstodden/algorithms/collinear",
+        artifact("junit:junit"),
+    ],
 )
 
 java_test(

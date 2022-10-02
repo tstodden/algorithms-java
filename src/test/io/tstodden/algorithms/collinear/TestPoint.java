@@ -8,7 +8,7 @@ import org.junit.Test;
 public class TestPoint {
 
   private static final Point REFERENCE_POINT = new Point(0, 0);
-  private static final double ACCEPTABLE_DELTA = 0.001;
+  private static final double ACCEPTABLE_DELTA = 0.0001;
 
   @Test
   public void testPointLessThanTheReference() {

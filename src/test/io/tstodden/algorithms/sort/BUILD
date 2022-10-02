@@ -6,8 +6,19 @@ test_suite(
     name = "sort",
     tests = [
         ":insertion_test",
+        ":merge_bottom_up_test",
         ":merge_test",
         ":selection_test",
+    ],
+)
+
+java_test(
+    name = "merge_test",
+    srcs = ["TestMerge.java"],
+    test_class = "io.tstodden.algorithms.sort.TestMerge",
+    deps = [
+        "//src/main/io/tstodden/algorithms/sort",
+        artifact("junit:junit"),
     ],
 )
 
@@ -22,9 +33,9 @@ java_test(
 )
 
 java_test(
-    name = "merge_test",
-    srcs = ["TestMerge.java"],
-    test_class = "io.tstodden.algorithms.sort.TestMerge",
+    name = "merge_bottom_up_test",
+    srcs = ["TestMergeBottomUp.java"],
+    test_class = "io.tstodden.algorithms.sort.TestMergeBottomUp",
     deps = [
         "//src/main/io/tstodden/algorithms/sort",
         artifact("junit:junit"),

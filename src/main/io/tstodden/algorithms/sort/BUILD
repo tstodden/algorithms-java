@@ -21,6 +21,12 @@ java_binary(
 )
 
 java_binary(
+    name = "merge_bottom_up",
+    main_class = "io.tstodden.algorithms.sort.MergeBottomUp",
+    runtime_deps = [":sort"],
+)
+
+java_binary(
     name = "selection",
     main_class = "io.tstodden.algorithms.sort.Selection",
     runtime_deps = [":sort"],

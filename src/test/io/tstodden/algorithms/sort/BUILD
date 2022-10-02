@@ -1,3 +1,4 @@
+load("@rules_java//java:defs.bzl", "java_test")
 load("@rules_jvm_external//:defs.bzl", "artifact")
 
 package(default_visibility = ["//visibility:public"])
